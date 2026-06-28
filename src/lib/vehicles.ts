@@ -1,0 +1,498 @@
+export interface Vehicle {
+  slug: string
+  name: string
+  trim: string
+  make: string
+  model: string
+  year: number
+  price: string
+  msrp: string
+  category: string
+  badge: string
+  specs: {
+    engine: string
+    hp: string
+    torque: string
+    mpg: string
+    topSpeed: string
+    zeroTo60: string
+    transmission: string
+    drivetrain: string
+  }
+  images: string[]
+  color: string
+  interior: string
+  miles: string
+  vin: string
+  stock: string
+  featured: boolean
+  description: string
+  highlights: string[]
+  features: string[]
+}
+
+export const vehicles: Vehicle[] = [
+  {
+    slug: 'mercedes-benz-s-class-2024',
+    name: 'Mercedes-Benz S-Class',
+    make: 'Mercedes-Benz',
+    model: 'S-Class',
+    trim: 'S 580 4MATIC',
+    year: 2024,
+    price: '$142,500',
+    msrp: '$149,850',
+    category: 'sedan',
+    badge: 'Flagship',
+    specs: {
+      engine: 'V8 Biturbo',
+      hp: '496 hp',
+      torque: '516 lb-ft',
+      mpg: '18 / 28',
+      topSpeed: '155 mph',
+      zeroTo60: '4.4 sec',
+      transmission: '9-Speed Automatic',
+      drivetrain: 'AWD',
+    },
+    images: [
+      'https://images.unsplash.com/photo-1621184455862-c163dfb30e0f?w=1200&q=80',
+      'https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=1200&q=80',
+      'https://images.unsplash.com/photo-1614162692292-7ac56d7f7f1e?w=1200&q=80',
+    ],
+    color: 'Obsidian Black',
+    interior: 'Macchiato Beige / Black',
+    miles: '4,200',
+    vin: 'W1K6G7DB9RA200341',
+    stock: 'APX-2401',
+    featured: true,
+    description: 'The pinnacle of automotive luxury, combining cutting-edge technology with timeless elegance and unparalleled comfort. Every detail of the S-Class is crafted to deliver an extraordinary driving experience.',
+    highlights: [
+      'Executive Rear Seat Package',
+      '31-speaker Burmester 4D Surround Sound',
+      'E-Active Body Control Suspension',
+      'Digital Light with 1.3M micro-mirrors per headlamp',
+      'MBUX Interior Assist with gesture control',
+      'Active Ambient Lighting with 253 LEDs',
+    ],
+    features: [
+      'Air Suspension',
+      'Panoramic Sunroof',
+      'Heated & Ventilated Seats',
+      'Massage Function',
+      'Night Vision Assist',
+      'Lane Keeping Assist',
+      'Adaptive Cruise Control',
+      '360° Camera',
+      'Head-Up Display',
+      'Wireless Charging',
+      'Apple CarPlay / Android Auto',
+      'Navigation Pro',
+    ],
+  },
+  {
+    slug: 'porsche-911-turbo-s-2024',
+    name: 'Porsche 911 Turbo S',
+    make: 'Porsche',
+    model: '911',
+    trim: 'Turbo S',
+    year: 2024,
+    price: '$207,000',
+    msrp: '$214,990',
+    category: 'sports',
+    badge: 'Sports',
+    specs: {
+      engine: '6-Cyl Boxer',
+      hp: '640 hp',
+      torque: '590 lb-ft',
+      mpg: '15 / 22',
+      topSpeed: '205 mph',
+      zeroTo60: '2.6 sec',
+      transmission: '8-Speed PDK',
+      drivetrain: 'AWD',
+    },
+    images: [
+      'https://images.unsplash.com/photo-1614162692292-7ac56d7f7f1e?w=1200&q=80',
+      'https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=1200&q=80',
+      'https://images.unsplash.com/photo-1621184455862-c163dfb30e0f?w=1200&q=80',
+    ],
+    color: 'GT Silver Metallic',
+    interior: 'Black / Bordeaux Red',
+    miles: '1,800',
+    vin: 'WP0AB2A93RS200472',
+    stock: 'APX-2402',
+    featured: true,
+    description: 'The benchmark for supercar performance meets everyday usability. The 911 Turbo S delivers breathtaking acceleration with Porsche\'s legendary precision and craftsmanship.',
+    highlights: [
+      'Sport Chrono Package',
+      'Porsche Ceramic Composite Brakes (PCCB)',
+      'Rear-Axle Steering',
+      'Active Aerodynamics',
+      'Sports Exhaust System',
+      'LED Matrix Headlights',
+    ],
+    features: [
+      'Adaptive Sport Seats Plus',
+      'BOSE Surround Sound',
+      'Porsche Communication Management',
+      'Apple CarPlay',
+      'Wireless Charging',
+      'Adaptive Cruise Control',
+      'Lane Change Assist',
+      '360° Camera',
+      'Lightweight Package',
+      'Carbon Fiber Interior',
+    ],
+  },
+  {
+    slug: 'bmw-7-series-2024',
+    name: 'BMW 7 Series',
+    make: 'BMW',
+    model: '7 Series',
+    trim: '760i xDrive',
+    year: 2024,
+    price: '$125,800',
+    msrp: '$131,250',
+    category: 'sedan',
+    badge: 'Featured',
+    specs: {
+      engine: 'V8 TwinPower',
+      hp: '536 hp',
+      torque: '553 lb-ft',
+      mpg: '17 / 26',
+      topSpeed: '155 mph',
+      zeroTo60: '4.1 sec',
+      transmission: '8-Speed Automatic',
+      drivetrain: 'AWD',
+    },
+    images: [
+      'https://images.unsplash.com/photo-1555215695-3004980ad54e?w=1200&q=80',
+      'https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=1200&q=80',
+      'https://images.unsplash.com/photo-1614162692292-7ac56d7f7f1e?w=1200&q=80',
+    ],
+    color: 'Carbon Black',
+    interior: 'Smoke White Full Merino',
+    miles: '3,100',
+    vin: 'WBA23EU07RCP50789',
+    stock: 'APX-2403',
+    featured: true,
+    description: 'The pinnacle of BMW luxury and performance. The 7 Series redefines the luxury sedan with its commanding presence, innovative technology, and unparalleled comfort.',
+    highlights: [
+      '31" BMW Theatre Screen',
+      'Bowers & Wilkins Diamond Surround Sound',
+      'Executive Lounge with Power Reclining',
+      'Sky Lounge Panoramic Glass Roof',
+      'BMW Individual Interior',
+      'Active Lane Keeping Assistant',
+    ],
+    features: [
+      'Air Suspension',
+      'Panoramic Sky Lounge',
+      'Heated & Ventilated Seats',
+      'Massage Function',
+      'Parking Assistant Professional',
+      'Drive Recorder',
+      'Ambient Light Bar',
+      'CraftedClarity Glass Controls',
+      'Wireless Charging',
+      'Apple CarPlay / Android Auto',
+    ],
+  },
+  {
+    slug: 'lexus-ls-500h-2024',
+    name: 'Lexus LS 500h',
+    make: 'Lexus',
+    model: 'LS',
+    trim: 'LS 500h AWD',
+    year: 2024,
+    price: '$112,850',
+    msrp: '$118,450',
+    category: 'luxury',
+    badge: 'Hybrid',
+    specs: {
+      engine: 'V6 Hybrid',
+      hp: '354 hp',
+      torque: '398 lb-ft',
+      mpg: '22 / 30',
+      topSpeed: '140 mph',
+      zeroTo60: '5.8 sec',
+      transmission: 'E-CVT + 4AT',
+      drivetrain: 'AWD',
+    },
+    images: [
+      'https://images.unsplash.com/photo-1583121274602-3e2820c69888?w=1200&q=80',
+      'https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=1200&q=80',
+      'https://images.unsplash.com/photo-1621184455862-c163dfb30e0f?w=1200&q=80',
+    ],
+    color: 'Manganese Luster',
+    interior: 'Craftsmanship Tan',
+    miles: '5,600',
+    vin: 'JTHBA1D26RA502318',
+    stock: 'APX-2404',
+    featured: false,
+    description: 'Japanese craftsmanship meets cutting-edge hybrid technology. The LS 500h delivers serene luxury with exceptional efficiency and Lexus\'s legendary reliability.',
+    highlights: [
+      'Lexus Safety System+ 3.0',
+      'Mark Levinson 3D Reference Audio',
+      'Executive Package with Shiatsu Massage',
+      'Kiriko Glass Interior Trim',
+      'Adaptive Variable Suspension',
+      'Lexus Teammate Advanced Park',
+    ],
+    features: [
+      'Air Suspension',
+      'Panoramic Roof',
+      'Heated & Ventilated Seats',
+      'Massage Function',
+      'Traffic Jam Assist',
+      'Lane Tracing Assist',
+      'Adaptive Cruise Control',
+      '360° Camera',
+      'Head-Up Display',
+      'Wireless Charging',
+    ],
+  },
+  {
+    slug: 'range-rover-sport-2024',
+    name: 'Range Rover Sport',
+    make: 'Land Rover',
+    model: 'Range Rover Sport',
+    trim: 'Autobiography',
+    year: 2024,
+    price: '$159,900',
+    msrp: '$167,300',
+    category: 'suv',
+    badge: 'SUV',
+    specs: {
+      engine: 'V8 Twin-Turbo',
+      hp: '523 hp',
+      torque: '553 lb-ft',
+      mpg: '16 / 23',
+      topSpeed: '155 mph',
+      zeroTo60: '4.3 sec',
+      transmission: '8-Speed Automatic',
+      drivetrain: 'AWD',
+    },
+    images: [
+      'https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?w=1200&q=80',
+      'https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=1200&q=80',
+      'https://images.unsplash.com/photo-1614162692292-7ac56d7f7f1e?w=1200&q=80',
+    ],
+    color: 'Eiger Grey',
+    interior: 'Ebony / Cirrus',
+    miles: '2,900',
+    vin: 'SALWA2FX8RA601734',
+    stock: 'APX-2405',
+    featured: false,
+    description: 'The most athletic and dynamic Range Rover ever. The Sport Autobiography combines breathtaking performance with British luxury and legendary off-road capability.',
+    highlights: [
+      'Dynamic Response Pro',
+      'Adaptive Off-Road Cruise Control',
+      'Stormer Handling Pack',
+      '24-Way Electric Memory Seats',
+      'Meridian 3D Surround Sound',
+      'Cabin Air Purification Pro',
+    ],
+    features: [
+      'Air Suspension',
+      'Panoramic Roof',
+      'Heated & Ventilated Seats',
+      'Massage Function',
+      'Terrain Response 2',
+      'All-Terrain Progress Control',
+      'ClearSight Ground View',
+      '360° Camera',
+      'Head-Up Display',
+      'Wireless Charging',
+    ],
+  },
+  {
+    slug: 'bentley-continental-gt-2024',
+    name: 'Bentley Continental GT',
+    make: 'Bentley',
+    model: 'Continental GT',
+    trim: 'V8 Speed',
+    year: 2024,
+    price: '$285,000',
+    msrp: '$298,900',
+    category: 'sports',
+    badge: 'Ultra-Luxury',
+    specs: {
+      engine: 'V8 Biturbo',
+      hp: '650 hp',
+      torque: '664 lb-ft',
+      mpg: '14 / 21',
+      topSpeed: '208 mph',
+      zeroTo60: '3.5 sec',
+      transmission: '8-Speed DCT',
+      drivetrain: 'AWD',
+    },
+    images: [
+      'https://images.unsplash.com/photo-1603584173870-7f23fdae1b7a?w=1200&q=80',
+      'https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=1200&q=80',
+      'https://images.unsplash.com/photo-1614162692292-7ac56d7f7f1e?w=1200&q=80',
+    ],
+    color: 'Mulliner White',
+    interior: 'Imperial Blue / Hotspur',
+    miles: '870',
+    vin: 'SCBCA3ZA8RC008256',
+    stock: 'APX-2406',
+    featured: true,
+    description: 'Handcrafted British luxury meets ferocious performance. The Continental GT Speed is the ultimate grand tourer, offering unparalleled refinement and breathtaking speed.',
+    highlights: [
+      'Mulliner Driving Specification',
+      'Bentley Dynamic Ride Anti-Roll',
+      'Carbon Ceramic Brakes',
+      'Naim for Bentley Audio System',
+      'Knight Engine Spinner',
+      'Comfort Specification',
+    ],
+    features: [
+      'Air Suspension',
+      'Panoramic Roof',
+      'Heated & Ventilated Seats',
+      'Massage Function',
+      'Adaptive Cruise Control',
+      'Night Vision',
+      'Head-Up Display',
+      'Wireless Charging',
+      'Apple CarPlay',
+      'Rotating Display',
+    ],
+  },
+  {
+    slug: 'porsche-cayenne-turbo-2024',
+    name: 'Porsche Cayenne Turbo GT',
+    make: 'Porsche',
+    model: 'Cayenne',
+    trim: 'Turbo GT',
+    year: 2024,
+    price: '$196,700',
+    msrp: '$204,800',
+    category: 'suv',
+    badge: 'Performance',
+    specs: {
+      engine: 'V8 Twin-Turbo',
+      hp: '650 hp',
+      torque: '626 lb-ft',
+      mpg: '14 / 21',
+      topSpeed: '186 mph',
+      zeroTo60: '3.1 sec',
+      transmission: '8-Speed Tiptronic S',
+      drivetrain: 'AWD',
+    },
+    images: [
+      'https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=1200&q=80',
+      'https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=1200&q=80',
+      'https://images.unsplash.com/photo-1614162692292-7ac56d7f7f1e?w=1200&q=80',
+    ],
+    color: 'Carrara White Metallic',
+    interior: 'Black / Neodyme',
+    miles: '2,100',
+    vin: 'WP1AD2A93RLA07892',
+    stock: 'APX-2407',
+    featured: false,
+    description: 'The most powerful Cayenne ever. The Turbo GT is a true SUV supercar that combines Porsche sports car performance with everyday practicality.',
+    highlights: [
+      'GT Design Package',
+      'Porsche Ceramic Composite Brakes',
+      'Rear-Axle Steering',
+      'Sport Exhaust System',
+      'Adaptive Sport Seats',
+      'Lightweight Package',
+    ],
+    features: [
+      'Air Suspension',
+      'Panoramic Roof',
+      'Heated & Ventilated Seats',
+      'BOSE Surround Sound',
+      'Adaptive Cruise Control',
+      'Lane Keep Assist',
+      '360° Camera',
+      'Head-Up Display',
+      'Wireless Charging',
+      'Apple CarPlay',
+    ],
+  },
+  {
+    slug: 'mercedes-maybach-s-class-2024',
+    name: 'Mercedes-Maybach S-Class',
+    make: 'Mercedes-Maybach',
+    model: 'S-Class',
+    trim: 'S 680 4MATIC',
+    year: 2024,
+    price: '$235,000',
+    msrp: '$249,200',
+    category: 'luxury',
+    badge: 'Ultra-Luxury',
+    specs: {
+      engine: 'V12 Biturbo',
+      hp: '621 hp',
+      torque: '612 lb-ft',
+      mpg: '14 / 22',
+      topSpeed: '155 mph',
+      zeroTo60: '4.4 sec',
+      transmission: '9-Speed Automatic',
+      drivetrain: 'AWD',
+    },
+    images: [
+      'https://images.unsplash.com/photo-1555215695-3004980ad54e?w=1200&q=80',
+      'https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=1200&q=80',
+      'https://images.unsplash.com/photo-1621184455862-c163dfb30e0f?w=1200&q=80',
+    ],
+    color: 'Nautical Blue Metallic',
+    interior: 'Deep White Exclusive Nappa',
+    miles: '950',
+    vin: 'W1K6X7GB9RA007563',
+    stock: 'APX-2408',
+    featured: false,
+    description: 'The ultimate expression of automotive luxury. The Maybach S-Class elevates the S-Class experience with exclusive materials, V12 power, and bespoke craftsmanship.',
+    highlights: [
+      'Maybach Exclusive Interior',
+      'V12 Biturbo Engine',
+      'Executive Rear Seat Package Plus',
+      'Burmester 4D High-End Sound',
+      'Active Road Noise Compensation',
+      'Chauffeur Package',
+    ],
+    features: [
+      'Maybach Air Suspension',
+      'Panoramic Roof',
+      'Heated & Ventilated Seats',
+      'Massage Function',
+      'Night Vision',
+      'Lane Keeping Assist',
+      'Adaptive Cruise Control',
+      '360° Camera',
+      'Head-Up Display',
+      'Wireless Charging',
+    ],
+  },
+]
+
+export function getVehicleBySlug(slug: string): Vehicle | undefined {
+  return vehicles.find(v => v.slug === slug)
+}
+
+export function getVehiclesByCategory(category: string): Vehicle[] {
+  if (!category || category === 'all') return vehicles
+  return vehicles.filter(v => v.category === category)
+}
+
+export const categories = [
+  { id: 'all', label: 'All Vehicles' },
+  { id: 'sedan', label: 'Sedan' },
+  { id: 'suv', label: 'SUV' },
+  { id: 'sports', label: 'Sports' },
+  { id: 'luxury', label: 'Luxury' },
+  { id: 'electric', label: 'Electric' },
+]
+
+export function searchVehicles(query: string): Vehicle[] {
+  const q = query.toLowerCase()
+  return vehicles.filter(v =>
+    v.name.toLowerCase().includes(q) ||
+    v.make.toLowerCase().includes(q) ||
+    v.model.toLowerCase().includes(q) ||
+    v.trim.toLowerCase().includes(q) ||
+    v.category.toLowerCase().includes(q)
+  )
+}
